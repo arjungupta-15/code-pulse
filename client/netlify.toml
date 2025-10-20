@@ -1,11 +1,10 @@
 [build]
-  base = "code-pulse/client"
+  base = "/opt/build/repo/code-pulse/client"
   publish = "dist"
   command = "npm install && npm run build"
 
 [build.environment]
   NODE_VERSION = "18.0.0"
-  NPM_FLAGS = "--no-optional"
 
 [[redirects]]
   from = "/*"
